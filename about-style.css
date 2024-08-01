@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    font-family: monospace;
+}
+
+.navbar {
+    background-color: #2e2e3e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: #cdd6f4;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    color: #f38ba8;
+}
+
+.header-section {
+    background-color: #3e3e4e;
+    color: #fff;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 60px; /* Adjust to the height of the navbar */
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.about-section {
+    background-color: #2e2e3e;
+    color: #cdd6f4;
+    padding: 60px 20px;
+}
+
+.about-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image img {
+    border-radius: 360px;
+    max-width: 100%;
+    height: auto;
+    width: 250px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-content h2 {
+    color: #89b4fa;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.contact-section {
+    background-color: #2e2e3e;
+    color: #cdd6f4;
+    padding: 60px 20px;
+}
+
+.contact-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section .section-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #89b4fa;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    color: #a6e3a1;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-link img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.contact-link:hover, 
+.contact-link:focus, 
+.contact-link:active {
+    color: #f9e2af;
+}

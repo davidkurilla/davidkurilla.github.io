@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    font-family: monospace;
+}
+
+.navbar {
+    background-color: #2e2e3e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: #cdd6f4;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    color: #f38ba8;
+}
+
+.header-section {
+    background-color: #3e3e4e;
+    color: #fff;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 60px; /* Adjust to the height of the navbar */
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.post-date {
+    font-size: 1em;
+    color: #a6e3a1;
+    margin-top: 10px;
+}
+
+.blog-post {
+    background-color: #2e2e3e;
+    color: #cdd6f4;
+    padding: 60px 20px;
+}
+
+.blog-post .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.blog-post p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Code Block Styling */
+pre {
+    background-color: #3e3e4e;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.copy-button {
+    background-color: #f38ba8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.copy-button:hover,
+.copy-button:focus,
+.copy-button:active {
+    background-color: #ff79c6;
+}
+
+.contact-section {
+    background-color: #2e2e3e;
+    color: #cdd6f4;
+    padding: 60px 20px;
+}
+
+.contact-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section .section-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #89b4fa;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    color: #a6e3a1;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-link img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.contact-link:hover, 
+.contact-link:focus, 
+.contact-link:active {
+    color: #f9e2af;
+}
+
+button {
+    background-color: #3e3e4e; /* A soft blue color that complements the theme */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: monospace;
+}
+
+button:hover,
+button:focus,
+button:active {
+    background-color: #a6e3a1; /* Slightly darker blue for hover effect */
+    transform: scale(1.05); /* Slight scale effect for feedback */
+}
+
+button i {
+    font-size: 1.2em; /* Icon size */
+}
+
+button .text {
+    font-weight: bold; /* Emphasize the text */
+}
