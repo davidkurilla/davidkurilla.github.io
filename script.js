@@ -12,21 +12,22 @@ let index = 0;
 function typeText() {
     const typingTextElement = document.getElementById('typing-text');
     const developerTextElement = document.getElementById('developer-text');
+    const typingSpeed = 50;
 
     if (index < text.length) {
         typingTextElement.innerHTML += text.charAt(index);
         index++;
-        setTimeout(typeText, 100); // Adjust typing speed here
+        setTimeout(typeText, typingSpeed); // Adjust typing speed here
     } else if (index < text.length + name.length) {
         const nameIndex = index - text.length;
         typingTextElement.innerHTML += `<span class="${name[nameIndex].class}">${name[nameIndex].char}</span>`;
         index++;
-        setTimeout(typeText, 100); // Adjust typing speed here
+        setTimeout(typeText, typingSpeed); // Adjust typing speed here
     } else if (index < text.length + name.length + developerText.length) {
         const developerTextIndex = index - text.length - name.length;
         developerTextElement.innerHTML += developerText.charAt(developerTextIndex);
         index++;
-        setTimeout(typeText, 100); // Adjust typing speed here
+        setTimeout(typeText, typingSpeed); // Adjust typing speed here
     }
 }
 
