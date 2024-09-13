@@ -5,6 +5,14 @@ body {
     font-family: monospace;
 }
 
+.image-icon {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+}
+
 .navbar {
     background-color: #2e2e3e;
     position: fixed;
@@ -224,5 +232,292 @@ section {
 
     .header-content h2 {
         font-size: 1em;
+    }
+}
+
+/* Add this to your CSS file */
+
+@keyframes colorful-gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(-45deg, #ff6f61, #ffcc66, #66ff99, #66ccff, #9966ff, #ff66cc);
+    background-size: 400% 400%;
+    animation: colorful-gradient-animation 10s ease infinite;
+    color: #cdd6f4;
+    font-family: monospace;
+}
+
+.header-section {
+    background: transparent;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 60px; /* Adjust to the height of the navbar */
+    position: relative;
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.85); /* Darker terminal-like background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%; /* Adjust width to make it like a window */
+    border: 1px solid #333; /* Adds terminal window border */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Terminal window title bar */
+.terminal-bar {
+    background-color: #2e2e3e;
+    padding: 5px 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+}
+
+/* Window control buttons */
+.terminal-bar .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.terminal-bar .dot.red {
+    background-color: #ff5f56;
+}
+
+.terminal-bar .dot.yellow {
+    background-color: #ffbd2e;
+}
+
+.terminal-bar .dot.green {
+    background-color: #27c93f;
+}
+
+.header-content h1 {
+    font-size: 2.8em;
+    margin: 0 0 15px;
+    text-shadow: none; /* No shadow for a cleaner terminal look */
+}
+
+.header-content h2 {
+    font-size: 1.2em;
+    margin: 0;
+    text-shadow: none; /* No shadow for a cleaner terminal look */
+}
+
+/* Adjust the font to feel more like a terminal */
+.header-content, .header-content h1, .header-content h2 {
+    font-family: 'Courier New', Courier, monospace; /* Classic terminal font */
+}
+
+/* Add this to your CSS file */
+
+/* Terminal Pop-up Animation */
+@keyframes terminal-popup {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.85); /* Terminal-like background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    
+    /* Animation on page load */
+    transform: scale(0.7);
+    opacity: 0;
+    animation: terminal-popup 0.8s ease-out forwards; /* Pop-up effect */
+}
+
+/* Terminal window title bar */
+.terminal-bar {
+    background-color: #2e2e3e;
+    padding: 5px 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+}
+
+/* Window control buttons */
+.terminal-bar .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.terminal-bar .dot.red {
+    background-color: #ff5f56;
+}
+
+.terminal-bar .dot.yellow {
+    background-color: #ffbd2e;
+}
+
+.terminal-bar .dot.green {
+    background-color: #27c93f;
+}
+
+.header-content h1 {
+    font-size: 2.8em;
+    margin: 0 0 15px;
+}
+
+.header-content h2 {
+    font-size: 1.2em;
+    margin: 0;
+    text-shadow: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Parallax Effect for Background */
+.header-section {
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 60px; /* Adjust to the height of the navbar */
+}
+
+/* Floating Effect */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.project-card {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Existing styles remain the same */
+
+/* Projects Section */
+.projects-section {
+    background-color: #2e2e3e;
+    color: #cdd6f4;
+    padding: 60px 20px;
+}
+
+.projects-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #89b4fa;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Project Card */
+.project-card {
+    background-color: #3e3e4e;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    border: 2px solid transparent;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #f38ba8;
+}
+
+.project-card p {
+    color: #cdd6f4;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Unique Hover Colors */
+.project-card.card-1:hover {
+    border-color: #f38ba8; /* Pink */
+}
+
+.project-card.card-2:hover {
+    border-color: #89b4fa; /* Blue */
+}
+
+.project-card.card-3:hover {
+    border-color: #a6e3a1; /* Green */
+}
+
+/* Floating Effect */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.project-card {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-card {
+        width: calc(50% - 20px); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 100%; /* Full width for mobile */
     }
 }

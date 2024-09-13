@@ -19,16 +19,22 @@
 
     <header class="header-section" id="home">
         <div class="header-content">
-            <h1 id="typing-text"></h1>
+            <div class="terminal-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <h1 id="typing-text"><span class="blinking-cursor"></h1>
             <h2 id="developer-text"></h2>
         </div>
     </header>
+    
 
     <section class="projects-section" id="projects">
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card card-1">
                     <h3>Hyperswitch</h3>
                     <p>
                         Made contributions to an open-source payment processor called Hyperswitch.
@@ -37,9 +43,9 @@
                         We successfully deveolped and integrated our tool into the Hyperswitch codebase.
                     </p>
                     <i class="fa-brands fa-rust"></i>
-                    <p><a href="https://github.com/juspay/hyperswitch">Link to GitHub Repository</a></p>
+                    <p><a href="https://github.com/juspay/hypderswitch">Link to GitHub Repository</a></p>
                 </div>
-                <div class="project-card">
+                <div class="project-card card-2">
                     <h3>Refuel</h3>
                     <p>
                         Refuel is an open-source database migration tool built in Rust.
@@ -49,7 +55,7 @@
                     <i class="fa-brands fa-rust"></i>
                     <p><a href="https://github.com/davidkurilla/refuel">Link to GitHub Repository</a></p>
                 </div>
-                <div class="project-card">
+                <div class="project-card card-3">
                     <h3>Citrus</h3>
                     <p>
                         citrus is a task manager written in Rust.
